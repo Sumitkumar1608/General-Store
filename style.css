@@ -150,11 +150,7 @@ body {
     justify-self: center;
 } 
 
-.hero {
-    width: 86%;
-    justify-self: center;
-    margin-top: 15px;
-}
+
 
 /** order section **/
 .orderBanner{
@@ -165,7 +161,7 @@ body {
 }
 
 .orderBannerItems{
-  flex-basis: 28%;
+  flex-basis: 33%;
   margin: 1%;
 }
 
@@ -225,7 +221,6 @@ body {
 
 .productItems{
     flex-basis: 15%;
-    box-shadow: 0px 0px 10px 2px #ccc;
     border-radius: 15px;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -351,23 +346,23 @@ footer{
 }
 
 
-
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
+    .navbar ul, .nav-search,.icon,.cart-icon{
+        display: none;
     }
-
-    .productRow {
-        flex-direction: column;
-        align-items: center;
+    .hero-sec{
+        justify-self: center;
     }
-
-    .productItems {
-        flex-basis: 90%;
+    .orderBannerItems img{
+        width: 96%;
+        height: auto;
+        justify-items: center;
+      }
+    .productSection{
+        width: 380px;
     }
+    
 }
-
 
 
 
